@@ -1,0 +1,24 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "TestSum": "npm run test -- --spec cypress/integration/examples/TestSum.js --browser chrome",
+    "TestSumEdge": "npm run test -- --spec cypress/integration/examples/TestSum.js --browser edge",
+    "BP_Home": "npm run test -- --spec cypress/integration/examples/BP_Home.js --browser chrome"
+  },
+  "author": "Madhur",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.4.1",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^1.4.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0"
+  },
+  "dependencies": {
+    "cypress-commands": "^1.1.0"
+  }
+}

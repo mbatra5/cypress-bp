@@ -1,0 +1,13 @@
+{
+  "chromeWebSecurity": false,
+  "reporter": "junit",
+  "viewportHeight":768,
+  "viewportWidth":1366,
+  "defaultCommandTimeout": 10000,
+  "projectId": "xgq9h7",
+
+  "env":
+  {
+    "url" : "https://rahulshettyacademy.com"
+  }
+}
