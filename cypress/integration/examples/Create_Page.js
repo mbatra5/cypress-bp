@@ -3,7 +3,7 @@
 describe('AEM Page Creation', function() 
 {
     before(function(){
-        cy.fixture('example').then(function(data)
+        cy.fixture('login').then(function(data)
         {  
             this.data=data
         })
@@ -11,7 +11,7 @@ describe('AEM Page Creation', function()
       })
 
     it('AEM Page Creation', function() {
-        cy.visit("https://author-cq-test1.navitas.bpglobal.com/sites.html/content/bp-test/countries/en/global")
+        cy.visit("https://author-cq-test1.navitas.bpglobal.com/sites.html/content/bp-test/countries/en_gb/global")
         cy.get('#username').type(this.data.email)
         cy.get('#password').type(this.data.password, { log: false })
         cy.get('#submit-button').click()
