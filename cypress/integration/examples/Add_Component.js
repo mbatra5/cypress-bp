@@ -6,7 +6,7 @@ describe('My first test suite', function()
     it('AEM Page Creation', function() {
         cy.visit("https://author-cq-test1.navitas.bpglobal.com/editor.html/content/bp-test/countries/en/global/new-homepage.html")
         cy.get('#username').type('madhur.batra@akqa.com')
-        cy.get('#password').type('Password1!', { log: false })
+        cy.get('#password').type('', { log: false })
         cy.get('#submit-button').click()
         cy.title().should('eq', 'New Homepage')
         cy.wait(4000)
